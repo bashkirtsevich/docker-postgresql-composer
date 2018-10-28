@@ -2,6 +2,11 @@
 
 Dockerized PostgreSQL-server with pgAdmin web-ui.
 
+## Requirements
+
+* [docker](https://www.docker.com/)
+* [docker-compose](https://docs.docker.com/compose/)
+
 ## Services handling
 
 * Ephemeral
