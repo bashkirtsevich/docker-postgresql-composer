@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  postgres:
+    image: postgres
+    env_file:
+      - config.env
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4
+    env_file:
+      - config.env
+    ports:
+      - "15432:80"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  postgres:
+    driver: bridge
