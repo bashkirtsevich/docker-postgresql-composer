@@ -21,6 +21,8 @@ Dockerized PostgreSQL-server with pgAdmin web-ui.
 > * pgAdmin
 >   * login: `admin`
 >   * password: `admin`
+>   * url: `http://localhost:15432`
 > * PostgreSQL
 >   * login: `admin`
 >   * password: `admin`
+>   * connection-url: `admin:admin@localhost:5432`
